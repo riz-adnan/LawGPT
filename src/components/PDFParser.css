@@ -1,0 +1,41 @@
+.pdf-parser-react {
+    padding: 20px;
+  }
+  
+  .pdf-parser-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .file-input {
+    margin-bottom: 20px;
+  }
+  
+  .question-input {
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+  }
+  
+  .text-preview {
+    margin-top: 20px;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .chat-display {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .list-group-item {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  
