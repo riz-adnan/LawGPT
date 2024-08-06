@@ -33,7 +33,7 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
           style={{ fontSize: '4rem' }}
         >
-          Welcome to Law Buddy
+          Welcome to LawGPT
         </motion.h1>
         <motion.p 
           className="mb-5"
