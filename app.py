@@ -16,17 +16,14 @@ genai.configure(api_key=api)
 from datasets import load_dataset
 
 ds = load_dataset("karan842/ipc-sections")
-ds2= load_dataset("Sharathhebbar24/Indian-Constitution")
+
 ds3= []
 for row in ds["train"]:
     ds3.append((row['Description'] or " ")+" and the section is : " + (row['Section'] or "")+". And the offence is "+ (row['Offense'] or " " )  + " And the punishment is "+(row['Punishment'] or " ")
    )
 
-ds4=[]
-for row in ds2["train"]:
-    ds4.append(row['article_desc'])
 
-ds5=ds3+ds4
+ds5=ds3
 
 client = QdrantClient(":memory:") 
 docs = ds5
